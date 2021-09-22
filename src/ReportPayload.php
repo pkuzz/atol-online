@@ -94,7 +94,7 @@ class ReportPayload implements ResponsePart
    *
    * @return string
    */
-  public function getFnNumber(): string
+  public function getFnNumber(): ?string
   {
     return $this->fnNumber;
   }
@@ -104,7 +104,7 @@ class ReportPayload implements ResponsePart
    *
    * @return string
    */
-  public function getEcrRegistrationNumber(): string
+  public function getEcrRegistrationNumber(): ?string
   {
     return $this->ecrRegistrationNumber;
   }
@@ -134,7 +134,7 @@ class ReportPayload implements ResponsePart
    *
    * @return string
    */
-  public function getFnsSite(): string
+  public function getFnsSite(): ?string
   {
     return $this->fnsSite;
   }
@@ -144,7 +144,7 @@ class ReportPayload implements ResponsePart
    *
    * @return string
    */
-  public function getOfdReceiptUrl(): string
+  public function getOfdReceiptUrl(): ?string
   {
     return $this->ofdReceiptUrl;
   }

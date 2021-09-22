@@ -79,7 +79,7 @@ class Report implements ResponsePart
    *
    * @return string
    */
-  public function getCallbackUrl(): string
+  public function getCallbackUrl(): ?string
   {
     return $this->callbackUrl;
   }
