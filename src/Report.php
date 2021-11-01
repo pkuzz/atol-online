@@ -155,7 +155,7 @@ class Report implements ResponsePart
 
     $result->uuid = $array['uuid'];
     $result->timestamp = DateTime::createFromFormat('d.m.Y H:i:s', $array['timestamp']);
-    $result->callbackUrl = $array['callback_url'];
+    $result->callbackUrl = $array['callback_url'] ?? '';
     $result->status = $array['status'];
     $result->groupCode = $array['group_code'];
     $result->daemonCode = $array['daemon_code'];

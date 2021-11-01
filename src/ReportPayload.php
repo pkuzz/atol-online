@@ -157,12 +157,12 @@ class ReportPayload implements ResponsePart
     $result->shiftNumber = $array['shift_number'];
     $result->receiptDateTime = DateTime::createFromFormat('d.m.Y H:i:s', $array['receipt_datetime']);
     $result->total = $array['total'];
-    $result->fnNumber = $array['fn_number'];
-    $result->ecrRegistrationNumber = $array['ecr_registration_number'];
+    $result->fnNumber = $array['fn_number'] ?? '';
+    $result->ecrRegistrationNumber = $array['ecr_registration_number'] ?? '';
     $result->fiscalDocumentNumber = $array['fiscal_document_number'];
     $result->fiscalDocumentAttribute = $array['fiscal_document_attribute'];
-    $result->fnsSite = $array['fns_site'];
-    $result->ofdReceiptUrl = $array['ofd_receipt_url'];
+    $result->fnsSite = $array['fns_site'] ?? '';
+    $result->ofdReceiptUrl = $array['ofd_receipt_url'] ?? '';
 
     return $result;
   }
