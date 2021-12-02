@@ -69,13 +69,17 @@ class ReportError implements ResponsePart
     return $this->type;
   }
 
+    /**
+     * @param array $array every item in array is optional
+     * @return ReportError
+     */
   public static function fromArray(array $array): ReportError
   {
     $result = new ReportError();
 
-    $result->code = $array['code'];
-    $result->text = $array['text'];
-    $result->type = $array['type'];
+    $result->code = $array['code'] ?? 0;
+    $result->text = $array['text'] ?? '';
+    $result->type = $array['type'] ?? '';
 
     return $result;
   }
