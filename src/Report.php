@@ -85,14 +85,14 @@ class Report implements ResponsePart {
      *
      * Возможные значения:
      * - @return string
-     * @see Report::STATUS_FAIL – ошибка;
+     * - @see Report::STATUS_FAIL – ошибка;
      * - @see Report::STATUS_WAIT – ожидание
      *
      * @see Report::STATUS_DONE – готово;
-     * -/
+     */
     public function getStatus(): string
     {
-    return $this->status;
+        return $this->status;
     }
 
     /**
